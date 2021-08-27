@@ -9,14 +9,14 @@ class LanguagesController < ActiveRecord::Base
 
 
     # Rails Actions -----------------------------------------------------------------------------------------------------------------------------------
-    
+
 
     def show
-        langs = Language.all 
+        @langs = Language.all 
     end
 
     def index
-        lang = find_lang(params)
+        @lang = find_lang(params)
     end
 
 end
