@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TheCodex</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="application.css"
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="Main-Backdrop">
+      <div id="Top-Main-Backdrop">
+
+      </div>
+      <div id="Bottom-Main-Backdrop">
+        <div id="Main-Backdrop-Yield-Window">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
